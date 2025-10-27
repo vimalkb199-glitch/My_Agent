@@ -1,0 +1,110 @@
+{
+  "task_input": "Plan how to cook",
+  "timestamp": "2025-10-24T08:15:31.263747",
+  "complexity": "Simple",
+  "priority": "Low",
+  "task_traces": [
+    {
+      "operation": "Agent Creation",
+      "duration": 0.009918689727783203,
+      "status": "SUCCESS",
+      "details": "Created 3 agents: Task Planner, Task Analyzer, Plan Optimizer"
+    },
+    {
+      "operation": "Crew Execution",
+      "duration": 94.50159740447998,
+      "status": "SUCCESS",
+      "details": "Executed 3 tasks sequentially",
+      "agent_costs": {
+        "Task Planner": {
+          "tokens_used": 171,
+          "cost": 0.0012112499999999999
+        },
+        "Task Analyzer": {
+          "tokens_used": 142,
+          "cost": 0.0009212500000000001
+        },
+        "Plan Optimizer": {
+          "tokens_used": 131,
+          "cost": 0.0008987499999999999
+        }
+      }
+    }
+  ],
+  "log_results": [
+    {
+      "timestamp": "2025-10-24T08:13:56.741217",
+      "level": "INFO",
+      "message": "Agent creation completed successfully",
+      "duration": 0.009918689727783203
+    },
+    {
+      "timestamp": "2025-10-24T08:13:56.754847",
+      "level": "INFO",
+      "message": "Crew execution completed in 94.502s",
+      "duration": 94.50159740447998
+    }
+  ],
+  "execution_summary": {
+    "total_operations": 3,
+    "total_duration": 94.52528619766235,
+    "agent_breakdown": {
+      "Task Creation": {
+        "duration": 0.013636589050292969,
+        "operations": 1
+      },
+      "Agent Creation": {
+        "duration": 0.009965896606445312,
+        "operations": 1
+      },
+      "Crew Execution": {
+        "duration": 94.50168371200562,
+        "operations": 1
+      }
+    },
+    "api_calls": [
+      {
+        "api_name": "Agent Creation",
+        "timestamp": 1761293636.7412171,
+        "duration": 0.009918689727783203,
+        "status": "SUCCESS",
+        "tokens": 0
+      },
+      {
+        "api_name": "Crew Execution",
+        "timestamp": 1761293636.754847,
+        "duration": 94.50159740447998,
+        "status": "SUCCESS",
+        "tokens": 0
+      }
+    ]
+  },
+  "total_duration": 94.52528619766235,
+  "agent_cost_breakdown": {
+    "Task Planner": {
+      "input_tokens": 57,
+      "output_tokens": 114,
+      "cost": 0.0012112499999999999
+    },
+    "Task Analyzer": {
+      "input_tokens": 57,
+      "output_tokens": 85,
+      "cost": 0.0009212500000000001
+    },
+    "Plan Optimizer": {
+      "input_tokens": 47,
+      "output_tokens": 84,
+      "cost": 0.0008987499999999999
+    }
+  },
+  "cost_summary": {
+    "total_cost_by_agents": 0.0030312499999999997,
+    "total_input_tokens": 161,
+    "total_output_tokens": 283,
+    "cost_per_agent": {
+      "Task Planner": 0.0012112499999999999,
+      "Task Analyzer": 0.0009212500000000001,
+      "Plan Optimizer": 0.0008987499999999999
+    }
+  }
+}
